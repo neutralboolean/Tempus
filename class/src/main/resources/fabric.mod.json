@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tempusclass",
+  "version": "${version}",
+  "name": "TempusClass",
+  "description": "The Class mod module for the Tempus Cluster of roleplaying Minecraft mods",
+  "authors": [
+    "neutralboolean"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/tempusclass/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.neutral.tempusclass.client.TempusClassClient"
+    ],
+    "main": [
+      "com.neutral.tempusclass.TempusClass"
+    ]
+  },
+  "mixins": [
+    "tempusclass.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}

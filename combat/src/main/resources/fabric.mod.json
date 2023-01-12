@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "tempuscombat",
+  "version": "${version}",
+  "name": "TempusCombat",
+  "description": "The Combat mod module for the Tempus Cluster of roleplaying Minecraft mods.",
+  "authors": [
+    "neutral"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/tempuscombat/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.neutral.tempuscombat.client.TempusCombatClient"
+    ],
+    "main": [
+      "com.neutral.tempuscombat.TempusCombat"
+    ]
+  },
+  "mixins": [
+    "tempus-combat.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
